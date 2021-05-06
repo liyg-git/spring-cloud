@@ -1,0 +1,10 @@
+server:
+  port: 8989
+
+spring:
+  application:
+    name: spring-cloud-hystrix-dashboard
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"

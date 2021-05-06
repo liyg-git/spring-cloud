@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<packaging>pom</packaging>
+	<modules>
+		<module>Spring-Cloud-Gateway</module>
+		<module>Spring-Cloud-Eureka</module>
+        <module>Spring-Cloud-Eureka1</module>
+		<module>Spring-Cloud-Eureka2</module>
+        <module>Spring-Cloud-Eureka-Client</module>
+        <module>Spring-Cloud-Eureka-Client1</module>
+		<module>Spring-Cloud-Feign</module>
+		<module>Spring-Cloud-Ribbon</module>
+        <module>Spring-Cloud-Hystrix-Dashboard</module>
+		<module>Spring-Cloud-Turbine</module>
+        <module>spring-cloud-config-client</module>
+		<module>spring-cloud-config-server</module>
+		<module>Spring-Cloud-Zuul1</module>
+        <module>spring-cloud-Seluth</module>
+    </modules>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.10.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>spring-cloud</groupId>
+	<artifactId>spring-cloud</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-cloud</name>
+	<description>spring-cloud</description>
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Hoxton.SR11</spring-cloud.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
